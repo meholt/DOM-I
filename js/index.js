@@ -37,6 +37,49 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let container = document.getElementsByClassName('container');
+
+// Header
+let header = document.getElementsByTagName('header');
+
+// Nav Links
+let nav = document.querySelector('nav');
+let links = document.querySelectorAll('a');
+links.setAttribute('href', "#")
+
+// Logo Image
+let logo = document.getElementById('logo-img');
+logo.src(siteContent["nav"]["img-src"]);
+
+// CTA
+let cta = document.getElementsByClassName('cta');
+
+let ctaText = document.getElementsByClassName('cta-text');
+let h1 = document.getElementsByTagName('h1');
+let button = document.getElementsByTagName('button');
+
+let ctaImg = document.getElementsByIdName('cta-img')
+ctaImg.src(siteContent["cta"]["img-src"]);
+ctaImg.alt("Image of a code snippet.");
+
+// Main Content
+let mainContent = document.getElementsByClassName('main-content');
+let topContent = document.getElementsByClassName('top-content');
+let textContent = document.querySelectorAll('text-content');
+let h4 = document.querySelectorAll('h4');
+let p = document.querySelectorAll('p');
+
+// Middle Image
+let midImg = document.getElementById('middle-img');
+midImg.src(siteContent["main-content"]["middle-img-src"]);
+midImg.alt("Image of code snippets across the screen");
+
+// Bottom Content
+let btmContent = document.getElementsByClassName('bottom-content');
+
+// Contact
+let contact = document.getElementsByClassName('contact');
+
+// Footer
+let footer = document.getElementsByTagName('footer');
