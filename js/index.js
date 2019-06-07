@@ -38,19 +38,15 @@ const siteContent = {
 };
 
 
-let container = document.getElementsByClassName('container');
-
-// Header
-let header = document.getElementsByTagName('header');
-
 // Nav Links
-let nav = document.querySelector('nav');
-let links = document.querySelectorAll('a');
-links.setAttribute('href', "#")
+let navLinks = document.querySelectorAll('nav a');
+navLinks.forEach((currentObj, i) => {
+  currentObj.innerHTML = siteContent.nav[nav-item-${i + 1}]
+})
 
 // Logo Image
 let logo = document.getElementById('logo-img');
-logo.src(siteContent["nav"]["img-src"]);
+logo.src = siteContent["nav"]["img-src"];
 
 // CTA
 let cta = document.getElementsByClassName('cta');
@@ -60,20 +56,18 @@ let h1 = document.getElementsByTagName('h1');
 let button = document.getElementsByTagName('button');
 
 let ctaImg = document.getElementsByIdName('cta-img')
-ctaImg.src(siteContent["cta"]["img-src"]);
-ctaImg.alt("Image of a code snippet.");
+ctaImg.src = siteContent["cta"]["img-src"];
+ctaImg.alt = "Image of a code snippet.";
 
 // Main Content
 let mainContent = document.getElementsByClassName('main-content');
-let topContent = document.getElementsByClassName('top-content');
-let textContent = document.querySelectorAll('text-content');
-let h4 = document.querySelectorAll('h4');
-let p = document.querySelectorAll('p');
+let featuresH4 = document.getElementsByTagName('h4 p');
+let 
 
 // Middle Image
-let midImg = document.getElementById('middle-img');
-midImg.src(siteContent["main-content"]["middle-img-src"]);
-midImg.alt("Image of code snippets across the screen");
+let middleImg = document.getElementById('middle-img');
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+middleImg.alt = "Image of code snippets across the screen";
 
 // Bottom Content
 let btmContent = document.getElementsByClassName('bottom-content');
