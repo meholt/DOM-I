@@ -39,41 +39,39 @@ const siteContent = {
 
 
 // Nav Links
-let navLinks = document.querySelectorAll('nav a');
-navLinks.forEach((currentObj, i) => {
-  currentObj.innerHTML = siteContent.nav[nav-item-${i + 1}]
-})
+const navLinks = document.querySelectorAll('nav a');
+
+navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
+navLinks[1].textContent = siteContent["nav"]["nav-item-2"];
+navLinks[2].textContent = siteContent["nav"]["nav-item-3"];
+navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
+navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
+navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // Logo Image
-let logo = document.getElementById('logo-img');
+const logo = document.getElementById('logo-img');
 logo.src = siteContent["nav"]["img-src"];
 
-// CTA
-let cta = document.getElementsByClassName('cta');
+// CTA SECTION
+const mainTitle = document.querySelector('h1');
 
-let ctaText = document.getElementsByClassName('cta-text');
-let h1 = document.getElementsByTagName('h1');
-let button = document.getElementsByTagName('button');
+const button = document.querySelector('button');
 
-let ctaImg = document.getElementsByIdName('cta-img')
+const ctaImg = document.querySelector('cta-img');
 ctaImg.src = siteContent["cta"]["img-src"];
 ctaImg.alt = "Image of a code snippet.";
 
 // Main Content
-let mainContent = document.getElementsByClassName('main-content');
-let featuresH4 = document.getElementsByTagName('h4 p');
-let 
+const mainContent = document.querySelectorAll('p');
+const mainTitle = document.querySelectorAll('h4');
 
-// Middle Image
-let middleImg = document.getElementById('middle-img');
+const middleImg = document.getElementById('middle-img');
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 middleImg.alt = "Image of code snippets across the screen";
 
-// Bottom Content
-let btmContent = document.getElementsByClassName('bottom-content');
 
 // Contact
-let contact = document.getElementsByClassName('contact');
+const contact = document.querySelector('.contact');
 
 // Footer
-let footer = document.getElementsByTagName('footer');
+const footer = document.querySelector('footer');
