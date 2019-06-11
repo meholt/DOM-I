@@ -40,19 +40,31 @@ const siteContent = {
 
 // Nav Links
 let navLinks = document.querySelectorAll('nav a');
-// Array.from(navLinks);
-
-// navLinks.forEach((links, i) => {
-//   links.innerHTML = siteContent.nav
-// })
-
 
 navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
+navLinks[0].style.color = "green";
 navLinks[1].textContent = siteContent["nav"]["nav-item-2"];
+navLinks[1].style.color = "green";
 navLinks[2].textContent = siteContent["nav"]["nav-item-3"];
+navLinks[2].style.color = "green";
 navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
+navLinks[3].style.color = "green";
+
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
+navLinks[4].style.color = "green";
+let about_link = navLinks[4];
+const career_link = document.createElement('a');
+career_link.textContent = "Join Our Team!";
+about_link.prependChild(career_link);
+
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
+navLinks[5].style.color = "green";
+let contact_link = navLinks[5];
+const faqs = document.createElement('a');
+faqs.textContent = "FAQs";
+faqs.style.color = "dodgerblue";
+contact_link.appendChild(faqs);
+
 
 // Logo Image
 const logo = document.getElementById('logo-img');
