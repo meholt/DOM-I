@@ -39,7 +39,7 @@ const siteContent = {
 
 
 // Nav Links
-let navLinks = document.querySelectorAll('nav a');
+let navLinks = Array.from(document.querySelectorAll('nav a'));
 
 navLinks[0].textContent = siteContent["nav"]["nav-item-1"];
 navLinks[0].style.color = "green";
