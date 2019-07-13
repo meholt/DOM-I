@@ -75,5 +75,28 @@ top_text[1].textContent = siteContent["main-content"]["about-content"];
 
 // Image
 let middle_img = document.getElementById('middle-img');
+middle_img.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+// Bottom Content
+let bottom_title = document.querySelectorAll('.bottom-content .text-content h4');
+bottom_title[0].textContent = siteContent["main-content"]["services-h4"];
+bottom_title[1].textContent = siteContent["main-content"]["product-h4"];
+bottom_title[2].textContent = siteContent["main-content"]["vision-h4"];
 
+let bottom_text = document.querySelectorAll('.bottom-content .text-content p');
+bottom_text[0].textContent = siteContent["main-content"]["services-content"];
+bottom_text[1].textContent = siteContent["main-content"]["product-content"];
+bottom_text[2].textContent = siteContent["main-content"]["vision-content"];
+
+// Contact
+let contact_title = document.querySelectorAll('.contant h4');
+contact_title.textContent = siteContent["contact"]["contact-h4"];
+
+let contact_info = document.querySelectorAll('.contact p');
+contact_info[0].textContent = siteContent["contact"]["address"];
+contact_info[1].textContent = siteContent["contact"]["phone"];
+contact_info[2].textContent = siteContent["contact"]["email"];
+
+// Footer
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent["footer"]["copyright"];
