@@ -42,12 +42,17 @@ const siteContent = {
 // Navigation
 let nav = Array.from(document.querySelectorAll('a'));
 
-nav[0].textContent = siteContent["nav"]["nav-item-1"];
-nav[1].textContent = siteContent["nav"]["nav-item-2"];
-nav[2].textContent = siteContent["nav"]["nav-item-3"];
-nav[3].textContent = siteContent["nav"]["nav-item-4"];
-nav[4].textContent = siteContent["nav"]["nav-item-5"];
-nav[5].textContent = siteContent["nav"]["nav-item-6"];
+// nav[0].textContent = siteContent["nav"]["nav-item-1"];
+// nav[1].textContent = siteContent["nav"]["nav-item-2"];
+// nav[2].textContent = siteContent["nav"]["nav-item-3"];
+// nav[3].textContent = siteContent["nav"]["nav-item-4"];
+// nav[4].textContent = siteContent["nav"]["nav-item-5"];
+// nav[5].textContent = siteContent["nav"]["nav-item-6"];
+
+for(let i = 0, i < nav.length, i++) {
+  const navItem = `nav-item-${i+1}`;
+  nav[i].textContent = siteContent["nav"][navItem];
+}
 
 // Logo
 let logo = document.getElementById("logo-img");
